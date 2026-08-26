@@ -1,4 +1,4 @@
-function mostrarExec5() {
+function mostrarExer5() {
     const pi = 3.14;
     let raio = Number(prompt("Digite o raio do círculo:"));
     
@@ -7,4 +7,4 @@ function mostrarExec5() {
     console.log(`A área do círculo é: ${area}`);
 }
 
-export default mostrarExec5;
+export default mostrarExer5;

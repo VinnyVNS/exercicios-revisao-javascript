@@ -1,4 +1,4 @@
-function mostrarExec4() {
+function mostrarExer4() {
     let idade = Number(prompt("Digite sua idade:"));
 
     if(idade >= 18) {
@@ -9,4 +9,4 @@ function mostrarExec4() {
     }
 }
 
-export default mostrarExec4;
+export default mostrarExer4;

@@ -1,4 +1,4 @@
-function mostrarExec3() {
+function mostrarExer3() {
     let numero = Number(prompt("Digite um número:"));
 
     if(numero > 10) {
@@ -9,4 +9,4 @@ function mostrarExec3() {
     }
 }
 
-export default mostrarExec3;
+export default mostrarExer3;

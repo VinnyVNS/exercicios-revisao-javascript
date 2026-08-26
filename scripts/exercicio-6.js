@@ -1,4 +1,4 @@
-function mostrarExec6() {
+function mostrarExer6() {
     const numero = Number(prompt("Digite um número:"));
 
     if(numero % 2 === 0){
@@ -9,4 +9,4 @@ function mostrarExec6() {
     }
 }
 
-export default mostrarExec6;
+export default mostrarExer6;

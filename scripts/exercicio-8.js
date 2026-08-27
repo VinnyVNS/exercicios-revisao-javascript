@@ -1,9 +1,9 @@
 function mostrarExer8() {
-    let frutas = ['maca', 'banana', 'melancia'];
+    let frutas = ['Maça', 'Banana', 'Melancia'];
 
     console.log(frutas);
 
-    frutas.push("laranja");
+    frutas.push("Laranja");
     console.log(frutas);
 
     frutas.pop();

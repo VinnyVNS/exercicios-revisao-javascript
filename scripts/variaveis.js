@@ -43,40 +43,49 @@ function mostrarExerVariaveis() {
 
   console.log('Exercicio 14:');
 
-  for(let i = 0; i < numeros.length; i++) {
-    if(numeros[i] > 20) {
-      console.log(numeros[i]);
-    }
-  }
+  const numerosMaior10 = numeros.filter(numero => numero > 20);
+  console.log(numerosMaior10);
 
   console.log('Exercicio 15:');
 
-  for(let i = 0; i < numeros.length; i++) {
-    if(numeros[i] % 2 > 0) {
-      console.log(numeros[i]);
-    }
-  }
+  const numerosImpares = numeros.filter(numero => numero % 2 > 0);
+  console.log(numerosImpares);
 
   console.log('Exercicio 16:');
 
-  for(let i = 0; i < usuarios.length; i++) {
-    if(usuarios[i].idade >= 18) {
-      console.log(`${usuarios[i].nome} é maior de idade.`);
-    }
-  }
+  const maiorDeIdade = usuarios.filter(usuario => usuario.idade >= 18);
+  console.log(maiorDeIdade);
 
   console.log('Exercicio 17:');
 
-  for(let i = 0; i < usuarios.length; i++) {
-    if(usuarios[i].idade < 18) {
-      console.log(`${usuarios[i].nome} é menor de idade.`);
+  const menorDeIdade = usuarios.filter(usuario => usuario.idade < 18);
+  console.log(menorDeIdade);
+
+  console.log('Exercicio 18:');
+
+  const nomeSobrenome = usuarios.map(usuario => {
+    return `${usuario.nome} ${usuario.sobrenome}`;
+  });
+  console.log(nomeSobrenome);
+
+  console.log('Exercicio 19:');
+
+  const numeroMultiplos = numeros.map(numero => {
+    if(numero % 3 === 0 && numero % 5 === 0) {
+      return 'FizzBuzz';
     }
-  }
-}
+    else if(numero % 3 === 0) {
+      return 'Fizz';
+    }
+    else if(numero % 5 === 0) {
+      return 'Buzz';
+    }
+    else{
+      return numero;
+    }
+  });
 
-
-
-
-
+  console.log(numeroMultiplos);
+};
 
 export default mostrarExerVariaveis;

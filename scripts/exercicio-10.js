@@ -1,15 +1,20 @@
+function verificarTamanho(texto) {
+    if(texto.length <= 5) {
+        return `A string ${texto} é pequena.`;
+    }
+    else if(texto.length > 5 && texto.length <= 10) {
+        return `A string ${texto} é média.`;
+    }
+    else {
+        return `A string ${texto} é grande.`;
+    }
+}
+
 function mostrarExer10() {
     let string = prompt('Digite uma string:');
 
-    if(string.length <= 5) {
-        console.log(`A string ${string} é pequena.`);
-    }
-    else if(string.length > 5 && string.length <= 10) {
-        console.log(`A string ${string} é média.`);
-    }
-    else {
-        console.log(`A string ${string} é grande.`);
-    }
+    let resultado = verificarTamanho(string);
+    console.log(resultado);
 }
 
 export default mostrarExer10;

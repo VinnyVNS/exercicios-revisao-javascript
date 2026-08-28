@@ -1,6 +1,6 @@
 function mostrarExer1() {
     const nome = "Vinicius";
-    let idade = 26;
+    const idade = 26;
 
     console.log(`Olá, meu nome é ${nome} e eu tenho ${idade} anos.`);
 }

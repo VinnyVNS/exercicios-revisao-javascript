@@ -1,5 +1,5 @@
 function mostrarExer4() {
-    let idade = Number(prompt("Digite sua idade:"));
+    const idade = Number(prompt("Digite sua idade:"));
 
     if(idade >= 18) {
         console.log("Você é maior de idade.");

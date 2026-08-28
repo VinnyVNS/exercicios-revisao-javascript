@@ -1,5 +1,5 @@
 function mostrarExer3() {
-    let numero = Number(prompt("Digite um número:"));
+    const numero = Number(prompt("Digite um número:"));
 
     if(numero > 10) {
         console.log("O número é maior que 10.");

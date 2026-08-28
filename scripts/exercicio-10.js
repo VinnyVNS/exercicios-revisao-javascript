@@ -11,9 +11,9 @@ function verificarTamanho(texto) {
 }
 
 function mostrarExer10() {
-    let string = prompt('Digite uma string:');
+    const string = prompt('Digite uma string:');
 
-    let resultado = verificarTamanho(string);
+    const resultado = verificarTamanho(string);
     console.log(resultado);
 }
 
